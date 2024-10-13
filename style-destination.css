@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #8AA775;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1;
+  padding: 1vw 0vw;
+  animation: scroll-page;
+  animation-timeline: scroll(y) ;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.logo img{
+  width: 4vw;
+  height: 4vw;
+}
+
+.navbar h3{
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5vw;
+  justify-content: space-between;
+  font-size: 1.2vw;
+}
+
+.navbar ul a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar .menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  animation: scroll-page;
+    animation-timeline: scroll(y);
+}
+
+@keyframes scroll-page{
+  0%{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+  }
+  10%{
+    background-color: #3A6D8C;
+    color: rgb(255, 255, 255);
+  }
+  100%{
+    background-color: #3A6D8C;
+    color: rgb(255, 255, 255);
+  }
+}
+
+/* TITLE */
+
+#title{
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    background: url(asset/bratan-temple\ 2.png);
+    background-size: cover;
+    height: 20vh;
+    padding: 10vh 0 10vh 0 ;
+    font-size: 3vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* ABOUT */
+
+#about{
+    height: 90vh;
+    position: absolute;
+    margin-top: 45vh;
+    padding: 0 8vw;
+}
+
+#about .content{
+  display: flex;
+  gap: 5vw;
+  align-items: center;
+}
+
+.content img{
+  width: 40vw;
+}
+
+/* RECOMENDATION ACTIVITY */
+
+#recomendation-activity{
+  background-color: #EFEDE0;
+  width: 100vw;
+  height: 70vh;
+  position: absolute;
+  margin-top: 135vh;
+  padding: 3vh 3vw;
+}
+
+#recomendation-activity h1{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.container {
+    display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 3vw;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: mandatory;
+  scrollbar-width: none;
+}
+
+.card {
+    position: relative;
+    width: 18vw;
+    height: 50vh;
+    border-radius: 0 30px 0 30px;
+    overflow: hidden;
+}
+
+.card .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    z-index: 0;
+}
+
+
+/* TIKET */
+
+  #tiket {
+    position: absolute;
+    margin-top: 215vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  #tiket h1 {
+      color: #FFE7E7;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+  }
+
+  .card-row {
+    display: flex;
+    gap: 2vw;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 3vh 3vw;
+  }
+
+  .card-tiket {
+      background-color: #377BA5; 
+      border-radius: 15px;
+      padding: 2vw;
+      color: white;
+      transition: background-color 0.3s ease;
+      scroll-snap-align: start;
+      flex: 0 0 auto;
+  }
+
+  .card-tiket:nth-child(2n) {
+      background-color: #D66866; 
+  }
+
+  .card-tiket:hover {
+      background-color: #2C5677; 
+  }
+
+  .icon {
+      width: 5vw;
+  }
+
+  .day {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+  }
+
+  .custom-line{
+    border: none;
+    height: 1px;
+    background-color: #FFFFFF;
+    width: 100%; 
+    margin: 2vh 0; 
+  }
+
+  .jenis-tiket-harga{
+    display: flex;
+    align-items: center;
+    gap: 9vw;
+    height: 5vh;
+  }
+
+  .description {
+      color: #D2D2D2;
+      font-size: 0.9rem;
+  }
+
+  .price {
+      color: #F4B13C;
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
+
+  .buttons{
+    width: 100vw;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .buy-button {
+    padding: 2vh 2vw;
+    font-size: 1.3vw;
+    background-color: #6A8DB7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .buy-button:hover {
+      background-color: #54728E;
+  }
+
+  .card-row::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for WebKit browsers */
+  }
+
+/* MAPS */
+
+.map-container {
+    position: absolute;
+    margin-top: 290vh;
+    width: 100%;
+    height: 50%;
+    padding: 10vh 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER */
+
+footer p{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    margin-top: 375vh;
+}
