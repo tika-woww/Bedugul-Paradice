@@ -76,11 +76,11 @@ body{
     color: white;
   }
   10%{
-    background-color: #3A6D8C;
+    background-color: #75757579;
     color: rgb(255, 255, 255);
   }
   100%{
-    background-color: #3A6D8C;
+    background-color: #75757579;
     color: rgb(255, 255, 255);
   }
 }
@@ -119,6 +119,91 @@ body{
   width: 40vw;
 }
 
+.informasi-buka{
+  display: flex;
+  gap: 8vw;
+}
+
+.informasi-buka .hari-buka img{
+  width: 4vw;
+}
+
+.informasi-buka .jam-buka img{
+  width: 3vw;
+}
+
+.informasi-buka .hari-buka, .informasi-buka .jam-buka{
+  display: flex;
+  gap: 1vw;
+}
+
+/* FASILITAS */
+#fasilitas{
+  position: absolute;
+  margin-top: 125vh;
+  padding: 0 8vw;
+}
+
+#fasilitas .container-content{
+  display: flex;
+  gap: 5vw;
+}
+
+.container-content .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-content .content img{
+  width: 3.5vw;
+}
+
+.container-content .content p{
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+/* PERATURAN */
+#peraturan{
+  position: absolute;
+  margin-top: 155vh;
+  padding: 0 8vw;
+}
+
+#peraturan h1{
+  margin-bottom: 8vh;
+}
+
+#peraturan .container .content img{
+  width: 5vw;
+  margin-top: -8vh;
+  margin-left: -3vw;
+  position: absolute;
+}
+
+#peraturan .container .content{
+  background-color: #EFEDE0;
+  border-radius: 10px;
+  padding: 3vh 2vw 2vh 2vw;
+  text-align: center;
+}
+
+#peraturan .container .content h4{
+  color: #C96868;
+  font-size: 1vw;
+  margin: 4vh 0 1.5vh 0;
+}
+
+#peraturan .container .content p{
+  color: #395462;
+  font-size: 0.9vw;
+  font-weight: 600;
+  text-align: start;
+  margin: 0 0 1vh 0;
+}
+
 /* RECOMENDATION ACTIVITY */
 
 #recomendation-activity{
@@ -126,7 +211,7 @@ body{
   width: 100vw;
   height: 70vh;
   position: absolute;
-  margin-top: 135vh;
+  margin-top: 210vh;
   padding: 3vh 3vw;
 }
 
@@ -188,7 +273,7 @@ body{
 
   #tiket {
     position: absolute;
-    margin-top: 215vh;
+    margin-top: 290vh;
     width: 100vw;
     overflow-x: hidden;
   }
@@ -292,7 +377,7 @@ body{
 
 .map-container {
     position: absolute;
-    margin-top: 290vh;
+    margin-top: 360vh;
     width: 100%;
     height: 50%;
     padding: 10vh 0;
@@ -312,5 +397,5 @@ footer p{
     display: flex;
     justify-content: center;
     height: 10vh;
-    margin-top: 375vh;
+    margin-top: 445vh;
 }
