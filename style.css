@@ -64,9 +64,7 @@ body{
   flex-direction: column;
   height: 20px;
   justify-content: space-between;
-  position: relative;
-  animation: scroll-page;
-    animation-timeline: scroll(y);
+  cursor: pointer;
 }
 
 @keyframes scroll-page{
@@ -84,6 +82,62 @@ body{
   }
 }
 
+@media (max-width: 1000px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: #3A6D8C;
+    width: 100vw;
+    height: auto;
+  }
+
+  .navbar .menu-toggle input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .navbar ul.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .navbar .menu-toggle {
+    display: flex;  
+  }
+
+
+  .navbar .menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+  }
+  .navbar .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+  .navbar .menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+  .navbar .menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+  .navbar .menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+  }
+  .navbar .menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+  }
+}
 /* BACKGROUND 3D */
 
 .spline-container{

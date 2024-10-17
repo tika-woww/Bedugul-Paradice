@@ -1,3 +1,10 @@
+const menuToggle = document.querySelector(".menu-toggle input");
+const nav = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", function () {
+  nav.classList.toggle("slide");
+});
+
 let nextDom = document.getElementById("next");
 let prevDom = document.getElementById("prev");
 
@@ -48,7 +55,6 @@ function showSlider(type) {
     next.click();
   }, timeAutoNext);
 }
-
 
 // Inisialisasi Fancybox untuk galeri
 Fancybox.bind("[data-fancybox='gallery']", {
