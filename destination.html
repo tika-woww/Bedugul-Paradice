@@ -30,32 +30,34 @@
     </div>
 
     <section id="title">
-        <h1>Pura Ulun Danu Beratan</h1>
+        <h1 id="nama-destinasi">Pura Ulun Danu Beratan</h1>
     </section>
+</div>
 
-    <section id="about">
+    <div class="wadah">
+      <section id="about">
         <div class="title">
-            <h1>Pura Ulun Danu Bedugul adalah salah satu ikon pariwisata Bali yang terletak di tepi Danau Beratan, Bedugul.</h1>
+            <h1 id="judul-content">Pura Ulun Danu Bedugul adalah salah satu ikon pariwisata Bali yang terletak di tepi Danau Beratan, Bedugul.</h1>
         </div>
 
         <div class="content">
-            <img src="asset/bali-bedugul-lake-temple-twin-waterfall-unesco-rice-field.png" alt="">
+            <img src="asset/bali-bedugul-lake-temple-twin-waterfall-unesco-rice-field.png" alt="" class="gambar">
             
             <div class="isi-content">
-              <p>Dikelilingi oleh pemandangan pegunungan yang sejuk dan danau yang tenang, pura ini menjadi tempat peribadatan umat Hindu yang didedikasikan untuk Dewi Danu, dewi air danau, dan sungai. Arsitektur pura yang megah berpadu indah dengan alam sekitar, menciptakan suasana sakral yang menenangkan. 
+              <p id="isi">Dikelilingi oleh pemandangan pegunungan yang sejuk dan danau yang tenang, pura ini menjadi tempat peribadatan umat Hindu yang didedikasikan untuk Dewi Danu, dewi air danau, dan sungai. Arsitektur pura yang megah berpadu indah dengan alam sekitar, menciptakan suasana sakral yang menenangkan. 
               <br><br>
             Pura ini tidak hanya menjadi tempat ibadah, tetapi juga destinasi wisata favorit karena keindahan alamnya yang memukau dan ketenangan spiritual yang dirasakan oleh para pengunjung.</p>
             <div class="informasi-buka">
               <div class="hari-buka">
                 <img src="asset/kalender (1).svg" alt="">
                 <hr>
-                <p>Setiap Hari</p>
+                <p id="hari-buka">Setiap Hari</p>
               </div>
 
               <div class="jam-buka">
                 <img src="asset/jam (1).svg" alt="">
                 <hr>
-                <p>08.00 - 16.00</p>
+                <p id="jam-buka">08.00 - 16.00</p>
               </div>
             </div>
             </div>
@@ -64,7 +66,7 @@
 
     <section id="fasilitas">
       <h1>Fasilitas</h1>
-      <div class="container-content">
+      <div class="container-content" id="container-content">
         <div class="content">
           <img src="asset/parking.svg" alt="">
           <p>Parking</p>
@@ -89,7 +91,7 @@
 
     <section id="peraturan">
       <h1>Peraturan</h1>
-      <div class="container">
+      <div class="container" id="container">
         <div class="content">
           <img src="asset/dilarang makan.svg" alt="">
           <h4>DILARANG MEMBAWA MINUMAN DAN MAKANAN</h4>
@@ -118,7 +120,7 @@
 
     <section id="recomendation-activity">
       <h1>REKOMENDASI KEGIATAN</h1>
-      <div class="container">
+      <div class="container" id="container-activity">
         <div class="card">
             <img src="asset/bratan-temple 2.png" alt="Gambar" class="image">
             <div class="text-overlay">
@@ -166,7 +168,7 @@
     <section id="tiket">
       <h1>HARGA TIKET MASUK</h1>
 
-      <div class="card-row">
+      <div class="card-row" id="card-row">
           <div class="card-tiket">
               <img src="asset/Logo-tiket.svg" alt="Icon" class="icon">
               <p class="day">Weekdays (Monday - Friday)</p>
@@ -224,11 +226,591 @@
     </section>
 
     <section class="map-container" id="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d252690.26171815765!2d114.8742326!3d-8.2743728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd189f36f06fc51%3A0x5c0b45f315c22902!2sBedugul%20Hill!5e0!3m2!1sen!2sid!4v1728218735324!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d252690.26171815765!2d114.8742326!3d-8.2743728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd189f36f06fc51%3A0x5c0b45f315c22902!2sBedugul%20Hill!5e0!3m2!1sen!2sid!4v1728218735324!5m2!1sen!2sid" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <footer>
         <p>© 2024 Bedugul Paradice. All Rights Reserved.</p>
     </footer>
+
+    </div>
+    <script>
+      function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+      const destinasiData = {
+        danauberatan: {
+          gambar: "asset/Danau Beratan.jpg",
+          nama: "Danau Beratan",
+          hariBuka: "Setiap Hari",
+          jamBuka: "07.00 - 19.00",
+          judulContent: "Danau Beratan, danau indah yang dikelilingi oleh pegunungan yang menciptakan suasana sejuk dan tenang",
+          isi: `Danau ini memiliki daya tarik utama yaitu Pura Ulun Danu Beratan, sebuah pura ikonik yang tampak mengapung di atas air, menjadi latar yang menakjubkan untuk berfoto. Suasana di sekitar danau ini sangat damai dan cocok untuk bersantai sambil menikmati keindahan alam yang memukau.<br><br>Di Danau Beratan, pengunjung juga dapat menikmati berbagai aktivitas air seperti naik perahu dayung atau speedboat. Selain itu, Danau Beratan menawarkan keindahan yang bervariasi, tergantung pada waktu kunjungan.`,
+          fasilitas: `<div class="content">
+          <img src="asset/parking.svg" alt="">
+          <p>Parking</p>
+        </div>
+        <div class="content">
+          <img src="asset/toilet.svg" alt="">
+          <p>Toilet</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/restaurant.svg" alt="">
+          <p>Restoran</p>
+        </div>`,
+        peraturan: `<div class="content">
+          <img src="asset/dilarang makan.svg" alt="">
+          <h4>DILARANG MEMBAWA MINUMAN DAN MAKANAN</h4>
+          <p>Untuk menjaga kenyamanan dan kebersihan, pengunjung dilarang membawa makanan dan minuman dari luar.</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/dilarang menginjak tanaman.svg" alt="">
+          <h4>DILARANG MENGINJAK ATAU MERUSAK TANAMAN</h4>
+          <p>Harap tidak menginjak atau merusak tanaman. Biarkan tumbuhan di sini tumbuh subur untuk dinikmati oleh semua.</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/dilarang membuang sampah .svg" alt="">
+          <h4>DILARANG MEMBUANG SAMPAH SEMBARANGAN</h4>
+          <p>Jagalah kebersihan lingkungan, gunakan tempat sampah yang telah disediakan agar tempat ini tetap nyaman untuk semua.</p>
+        </div>
+        
+        <div class="content">
+          <img src="asset/dilarang merokok.svg" alt="">
+          <h4>DILARANG MEROKOK DI AREA WISATA</h4>
+          <p>Demi menjaga kebersihan, merokok dilarang, silahkan merokok di tempat yang sudah di sediakan</p>
+        </div>`,
+        rekomendasi: `<div class="card">
+            <img src="asset/rekomendasi-kegiatan/1.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Bersepeda
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/2.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Jogging
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/3.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Berkeliling dengan perahu
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/4.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Mengunjungi desa Trunyan
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/5.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Memancing
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/6.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Camping disekitar danau
+            </div>
+        </div>`,
+        tiket: `<div class="card-tiket">
+              <img src="asset/Logo tiket weekday.svg" alt="Icon" class="icon">
+              <p class="day">Weekdays (Senin - Jumat)</p>
+              <hr class="custom-line">
+              <div class="jenis-tiket-harga">
+                <p class="description">Untuk local</p>
+                <p class="price">Rp 40.000</p>
+              </div>
+          </div>
+
+          <div class="card-tiket">
+              <img src="asset/Logo tiket weekend.svg" alt="Icon" class="icon">
+              <p class="day">Weekend (Sabtu - Minggu)</p>
+              <hr class="custom-line">
+              <div class="jenis-tiket-harga">
+                <p class="description">Untuk local</p>
+                <p class="price">Rp 50.000</p>
+              </div>
+          </div>
+
+          <div class="card-tiket">
+              <img src="asset/Logo tiket weekday.svg" alt="Icon" class="icon">
+              <p class="day">Weekdays (Senin - Jumat)</p>
+              <hr class="custom-line">
+              <div class="jenis-tiket-harga">
+                <p class="description">Untuk WNA</p>
+                <p class="price">Rp 50.000</p>
+              </div>
+          </div>
+
+          <div class="card-tiket">
+              <img src="asset/Logo tiket weekend.svg" alt="Icon" class="icon">
+              <p class="day">Weekend (Sabtu - Minggu)</p>
+              <hr class="custom-line">
+              <div class="jenis-tiket-harga">
+                <p class="description">Untuk WNA</p>
+                <p class="price">Rp 75.000</p>
+              </div>
+          </div>`,
+          maps: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15793.183337429278!2d115.16487742524073!3d-8.273325483622404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd18968c2459d53%3A0xbe028c1761c867ac!2sDanau%20Beratan!5e0!3m2!1sid!2sid!4v1729083814065!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+        },
+            
+        handaragolf: {
+          nama: "Handara Golf & Resort",
+          hariBuka: "Setiap Hari",
+          jamBuka: "09.00 - 22.00",
+          judulContent: "Handara Golf & Resort, lapangan golf yang terletak didataran tinggi bedugul dengan pemandangan gunung yang menawan",
+          isi:`Resort ini terkenal dengan gerbang Bali tradisionalnya yang megah, yang sering menjadi spot foto ikonik bagi wisatawan. Dengan suasana yang tenang dan alam yang menawan, tempat ini menjadi surga bagi pecinta golf yang ingin bermain di tengah alam.
+          <br><br>
+          Selain itu Handara Golf & Resort menawarkan berbagai fasilitas untuk menginap, mulai dari kamar-kamar mewah hingga restoran yang menyajikan hidangan lokal dan internasional. Dengan suasana yang sejuk dan asri, tempat ini sangat cocok bagi mereka yang ingin bersantai dan menikmati alam.`,
+          fasilitas: `<div class="content">
+          <img src="asset/parking.svg" alt="">
+          <p>Parking</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/wifi.svg" alt="">
+          <p>Wifi</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/toilet.svg" alt="">
+          <p>Toilet</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/restaurant.svg" alt="">
+          <p>Restoran</p>
+        </div>`,
+        peraturan: `<div class="content">
+          <img src="asset/dilarang makan.svg" alt="">
+          <h4>DILARANG MEMBAWA MINUMAN DAN MAKANAN</h4>
+          <p>Untuk menjaga kenyamanan dan kebersihan, pengunjung dilarang membawa makanan dan minuman dari luar.</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/dilarang membawa hewan peliharaan.svg" alt="">
+          <h4>DILARANG MEMBAWA HEWAN PELIHARAAN</h4>
+          <p>Demi kenyamanan dan keamanan semua pengunjung, harap tidak membawa hewan peliharaan ke tempat wisata ini.</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/dilarang membuang sampah .svg" alt="">
+          <h4>DILARANG MEMBUANG SAMPAH SEMBARANGAN</h4>
+          <p>Jagalah kebersihan lingkungan, gunakan tempat sampah yang telah disediakan agar tempat ini tetap nyaman untuk semua.</p>
+        </div>
+        
+        <div class="content">
+          <img src="asset/dilarang merokok.svg" alt="">
+          <h4>DILARANG MEROKOK DI AREA WISATA</h4>
+          <p>Demi menjaga kebersihan, merokok dilarang, silahkan merokok di tempat yang sudah di sediakan</p>
+        </div>`,
+        gambar: "asset/bali-handara-gate.jpg",
+        rekomendasi: `<div class="card">
+            <img src="asset/rekomendasi-kegiatan/7.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Bermain golf
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/8.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Berfoto di spot foto terbaik
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/9.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Menginap di resort handara
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/10.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Spa
+            </div>
+        </div>`,
+        tiket: `<div class="card-tiket">
+              <img src="asset/Logo tiket weekday.svg" alt="Icon" class="icon">
+              <p class="day">Weekdays (Senin - Jumat)</p>
+              <hr class="custom-line">
+              <div class="jenis-tiket-harga">
+                <p class="description">Untuk local</p>
+                <p class="price">Rp 40.000</p>
+              </div>
+          </div>
+
+          <div class="card-tiket">
+              <img src="asset/Logo tiket weekend.svg" alt="Icon" class="icon">
+              <p class="day">Weekend (Sabtu - Minggu)</p>
+              <hr class="custom-line">
+              <div class="jenis-tiket-harga">
+                <p class="description">Untuk local</p>
+                <p class="price">Rp 50.000</p>
+              </div>
+          </div>
+
+          <div class="card-tiket">
+              <img src="asset/Logo tiket weekday.svg" alt="Icon" class="icon">
+              <p class="day">Weekdays (Senin - Jumat)</p>
+              <hr class="custom-line">
+              <div class="jenis-tiket-harga">
+                <p class="description">Untuk WNA</p>
+                <p class="price">Rp 50.000</p>
+              </div>
+          </div>
+
+          <div class="card-tiket">
+              <img src="asset/Logo tiket weekend.svg" alt="Icon" class="icon">
+              <p class="day">Weekend (Sabtu - Minggu)</p>
+              <hr class="custom-line">
+              <div class="jenis-tiket-harga">
+                <p class="description">Untuk WNA</p>
+                <p class="price">Rp 75.000</p>
+              </div>
+          </div>`,
+        maps: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15793.183337429278!2d115.16487742524073!3d-8.273325483622404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd18968c2459d53%3A0xbe028c1761c867ac!2sDanau%20Beratan!5e0!3m2!1sid!2sid!4v1729055683692!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+        },
+
+        kebunraya: {
+          nama: "Kebun Raya Eka",
+          hariBuka: "Setiap Hari",
+          jamBuka: "08.30 - 19.00",
+          judulContent: "Kebun Raya Eka Karya, kebun rata terbesar di Bali yang berfokus pada konservasi tumbuhan terutama spesies tanaman tropis",
+          isi: `Tempat ini didedikasikan untuk konservasi berbagai jenis tanaman tropis, terutama flora yang berasal dari Indonesia. Kebun ini memiliki area yang luas dengan beragam koleksi tanaman langka, mulai dari tanaman anggrek, kaktus, hingga hutan hujan tropis mini.
+          <br><br>
+          Pengunjung bisa berjalan-jalan di jalur yang sudah disediakan sambil menikmati keindahan dan keragaman tanaman. Selain itu, kebun ini sering dijadikan tempat penelitian ilmiah dan juga menjadi lokasi favorit untuk piknik keluarga.`,
+          fasilitas: `<div class="content">
+          <img src="asset/parking.svg" alt="">
+          <p>Parking</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/toilet.svg" alt="">
+          <p>Toilet</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/restaurant.svg" alt="">
+          <p>Restoran</p>
+        </div>`,
+        peraturan: `
+        <div class="content">
+          <img src="asset/dilarang membuang sampah .svg" alt="">
+          <h4>DILARANG MEMBUANG SAMPAH SEMBARANGAN</h4>
+          <p>Jagalah kebersihan lingkungan, gunakan tempat sampah yang telah disediakan agar tempat ini tetap nyaman untuk semua.</p>
+        </div>
+        
+        <div class="content">
+          <img src="asset/dilarang memberi makan .svg" alt="">
+          <h4>DILARANG MEMBERI MAKAN HEWAN</h4>
+          <p>Untuk menjaga kesehatan hewan, pengunjung dilarang memberi makan hewan secara langsung.</p>
+        </div>
+        
+        <div class="content">
+          <img src="asset/dilarang menginjak tanaman.svg" alt="">
+          <h4>DILARANG MENGINJAK ATAU MERUSAK TANAMAN</h4>
+          <p>Harap tidak menginjak atau merusak tanaman. Biarkan tumbuhan di sini tumbuh subur untuk dinikmati oleh semua.</p>
+        </div>`,
+        gambar: "asset/Kebun Raya Eka Bedugul.jpeg",
+        rekomendasi: `<div class="card">
+            <img src="asset/rekomendasi-kegiatan/11.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Piknik sambil menikmati alam
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/12.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Bermain scooter
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/13.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Berkeliling dengan sepeda
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/14.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Menjelajahi tanaman paku
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/15.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Berfoto di patung kumbakarna 
+            </div>
+        </div>`,
+        maps: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.267866221021!2d115.15162797358933!3d-8.276116183193949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1890c3c22210d%3A0x894393636ac67dc5!2sKebun%20Raya%20Eka%20Karya%20Bali!5e0!3m2!1sid!2sid!4v1729055705922!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+        },
+
+        puraulundanu: {
+          nama: "Pura Ulun Danu Beratan",
+          hariBuka: "Setiap Hari",
+          jamBuka: "08.00 - 16.00",
+          judulContent: "Pura Ulun Danu Bedugul adalah salah satu ikon pariwisata Bali yang terletak di tepi Danau Beratan, Bedugul.",
+          isi: `Dikelilingi oleh pemandangan pegunungan yang sejuk dan danau yang tenang, pura ini menjadi tempat peribadatan umat Hindu yang didedikasikan untuk Dewi Danu, dewi air danau, dan sungai. Arsitektur pura yang megah berpadu indah dengan alam sekitar, menciptakan suasana sakral yang menenangkan. 
+          <br><br>
+          Pura ini tidak hanya menjadi tempat ibadah, tetapi juga destinasi wisata favorit karena keindahan alamnya yang memukau dan ketenangan spiritual yang dirasakan oleh para pengunjung.`,
+          kegiatan1: "Piknik",
+          kegiatan2: "Bermain Perahu",
+          fasilitas: `<div class="content">
+          <img src="asset/parking.svg" alt="">
+          <p>Parking</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/toilet.svg" alt="">
+          <p>Toilet</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/restaurant.svg" alt="">
+          <p>Restoran</p>
+        </div>`,
+        peraturan: `
+        <div class="content">
+          <img src="asset/dilarang membuang sampah .svg" alt="">
+          <h4>DILARANG MEMBUANG SAMPAH SEMBARANGAN</h4>
+          <p>Jagalah kebersihan lingkungan, gunakan tempat sampah yang telah disediakan agar tempat ini tetap nyaman untuk semua.</p>
+        </div>
+        
+        <div class="content">
+          <img src="asset/dilarang menggunakan celana pendek.svg" alt="">
+          <h4>DILARANG MENGGUNAKAN CELANA PENDEK</h4>
+          <p>Demi menghormati budaya dan kesopanan di area ini, pengunjung diharapkan tidak menggunakan celana pendek.</p>
+        </div>
+        
+        <div class="content">
+          <img src="asset/dilarang menginjak tanaman.svg" alt="">
+          <h4>DILARANG MENGINJAK ATAU MERUSAK TANAMAN</h4>
+          <p>Harap tidak menginjak atau merusak tanaman. Biarkan tumbuhan di sini tumbuh subur untuk dinikmati oleh semua.</p>
+        </div>`,
+        gambar: "asset/pura ulun danu bedugul.jpg",
+        rekomendasi: `<div class="card">
+            <img src="asset/rekomendasi-kegiatan/16.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+              Berfoto di spot foto terbaik
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/17.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Sembahyang
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/18.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Meditasi menenangkan diri
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/19.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Mencoba kuliner sekitar
+            </div>
+        </div>`,
+        maps: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.277295879432!2d115.16424847358934!3d-8.27517538318221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1896c9fac0857%3A0x18246568e4db1b53!2sPura%20Ulun%20Danu%20Beratan%20Bedugul!5e0!3m2!1sid!2sid!4v1729055740619!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+        }, 
+
+        theblooms: {
+          nama: "The Blooms Garden",
+          hariBuka: "Senin - Sabtu",
+          jamBuka: "09.00 - 21.00",
+          judulContent: "The Blooms Garden, taman bunga yang luas nan indah, dihiasi dengan berbagai macam bunga dan tanaman hias yang ditata dengan artistik.",
+          isi: `Pengunjung dapat menikmati jalan-jalan santai sambil mengagumi keindahan bunga dan memanfaatkan spot-spot fotografi yang tersebar di seluruh taman.
+          <br><br>
+          Selain keindahan alamnya, The Blooms Garden juga memiliki fasilitas seperti kafe dan area bermain anak, sehingga cocok untuk dikunjungi oleh keluarga. Dengan latar pegunungan dan udara yang sejuk, tempat ini memberikan pengalaman liburan yang menyegarkan dan menenangkan bagi para pengunjung.`,
+          fasilitas: `<div class="content">
+          <img src="asset/parking.svg" alt="">
+          <p>Parking</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/wifi.svg" alt="">
+          <p>Wifi</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/toilet.svg" alt="">
+          <p>Toilet</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/restaurant.svg" alt="">
+          <p>Restoran</p>
+        </div>`,
+        peraturan: `
+        <div class="content">
+          <img src="asset/dilarang membuang sampah .svg" alt="">
+          <h4>DILARANG MEMBUANG SAMPAH SEMBARANGAN</h4>
+          <p>Jagalah kebersihan lingkungan, gunakan tempat sampah yang telah disediakan agar tempat ini tetap nyaman untuk semua.</p>
+        </div>
+        
+        <div class="content">
+          <img src="asset/dilarang menginjak tanaman.svg" alt="">
+          <h4>DILARANG MENGINJAK ATAU MERUSAK TANAMAN</h4>
+          <p>Harap tidak menginjak atau merusak tanaman. Biarkan tumbuhan di sini tumbuh subur untuk dinikmati oleh semua.</p>
+        </div>
+        
+        <div class="content">
+          <img src="asset/dilarang membawa hewan peliharaan.svg" alt="">
+          <h4>DILARANG MEMBAWA HEWAN PELIHARAAN</h4>
+          <p>Demi kenyamanan dan keamanan semua pengunjung, harap tidak membawa hewan peliharaan ke tempat wisata ini.</p>
+        </div>`,
+        gambar: "asset/The-Blooms-Garden-Bali.jpg",
+        rekomendasi: `<div class="card">
+            <img src="asset/rekomendasi-kegiatan/20.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Berfoto di spot foto terbaik
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/22.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Mengamati bunga
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/23.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Menjelajahi kebun bunga
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/27.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Menjelajahi taman
+            </div>
+        </div>`,
+        maps: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.007114915142!2d115.1561985735899!3d-8.30208948351942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd189a0ee3f1fa5%3A0x86e5ba65deb4531e!2sThe%20Blooms%20Garden!5e0!3m2!1sid!2sid!4v1729055764491!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+        }, 
+
+        rumahgemuk: {
+          nama: "Rumah Gemuk",
+          hariBuka: "Setiap hari",
+          jamBuka: "10.00 - 21.00",
+          judulContent: "Rumah Gemuk Bedugul, destinasi wisata yang menggabungkan kafe dengan pemandangan alam Bedugul yang memukau.",
+          isi: `Dari kafe ini, pengunjung dapat menikmati pemandangan spektakuler Danau Beratan dan pegunungan di sekitarnya. Rumah Gemuk menjadi populer karena desainnya yang menarik dan spot-spot foto Instagrammable yang tersebar di seluruh area.
+          <br><br>
+          Dengan suasana yang cozy dan makanan serta minuman yang lezat, Rumah Gemuk Bedugul menjadi tempat yang sempurna untuk bersantai bersama teman atau keluarga. Pengunjung bisa menikmati hidangan sambil menikmati suasana alam yang indah.`,
+          fasilitas: `<div class="content">
+          <img src="asset/parking.svg" alt="">
+          <p>Parking</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/wifi.svg" alt="">
+          <p>Wifi</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/toilet.svg" alt="">
+          <p>Toilet</p>
+        </div>`,
+        peraturan: `<div class="content">
+          <img src="asset/dilarang makan.svg" alt="">
+          <h4>DILARANG MEMBAWA MINUMAN DAN MAKANAN</h4>
+          <p>Untuk menjaga kenyamanan dan kebersihan, pengunjung dilarang membawa makanan dan minuman dari luar.</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/dilarang merokok.svg" alt="">
+          <h4>DILARANG MEROKOK DI AREA WISATA</h4>
+          <p>Demi menjaga kebersihan, merokok dilarang, silahkan merokok di tempat yang sudah di sediakan</p>
+        </div>
+
+        <div class="content">
+          <img src="asset/dilarang membuang sampah .svg" alt="">
+          <h4>DILARANG MEMBUANG SAMPAH SEMBARANGAN</h4>
+          <p>Jagalah kebersihan lingkungan, gunakan tempat sampah yang telah disediakan agar tempat ini tetap nyaman untuk semua.</p>
+        </div>
+        
+        <div class="content">
+          <img src="asset/dilarang menginjak tanaman.svg" alt="">
+          <h4>DILARANG MENGINJAK ATAU MERUSAK TANAMAN</h4>
+          <p>Harap tidak menginjak atau merusak tanaman. Biarkan tumbuhan di sini tumbuh subur untuk dinikmati oleh semua.</p>
+        </div>`,
+        gambar: "asset/rumah gemuk.jpg",
+        rekomendasi: `<div class="card">
+            <img src="asset/rekomendasi-kegiatan/24.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Menikmati hidangan sembari piknik
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/26.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Menjelajahi taman bunga
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/25.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Menikmati hidangan
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="asset/rekomendasi-kegiatan/21.png" alt="Gambar" class="image">
+            <div class="text-overlay">
+                Berfoto di spot foto terbaik
+            </div>
+        </div>`,
+        maps: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.3602806327003!2d115.1580769735892!3d-8.26689138307868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd189d71e2356df%3A0x2b4738448285b9c2!2sRumah%20Gemuk%20Bali!5e0!3m2!1sid!2sid!4v1729055784371!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+        }
+      };
+
+      const destinasiDipilih = getQueryParam('destinasi');
+
+        if (destinasiDipilih && destinasiData[destinasiDipilih]) {
+          const data = destinasiData[destinasiDipilih];
+          document.querySelector('.content img.gambar').src = data.gambar;
+          document.getElementById('nama-destinasi').textContent = data.nama;
+          document.getElementById('hari-buka').textContent = data.hariBuka;
+          document.getElementById('jam-buka').textContent = data.jamBuka;
+          document.getElementById('judul-content').textContent = data.judulContent;
+          document.getElementById('isi').innerHTML = data.isi;
+          document.getElementById('container-content').innerHTML = data.fasilitas;
+          document.getElementById('container').innerHTML = data.peraturan;
+          document.getElementById('container-activity').innerHTML = data.rekomendasi;
+          document.getElementById('maps').innerHTML = data.maps;
+          document.getElementById('card-row').innerHTML = data.tiket;
+        } else {
+          document.getElementById('nama-destinasi').textContent = "Destinasi Tidak Ditemukan";
+        }
+
+        
+        </script>
 </body>
 </html>

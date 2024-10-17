@@ -92,7 +92,7 @@ body{
     position: absolute;
     text-align: center;
     width: 100vw;
-    background: url(asset/bratan-temple\ 2.png);
+    background-image: url(asset/bratan-temple\ 2.png);
     background-size: cover;
     height: 20vh;
     padding: 10vh 0 10vh 0 ;
@@ -100,12 +100,15 @@ body{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+.wadah{
+  position: absolute;
+  margin-top: 45vh;
+}
+
 /* ABOUT */
 
 #about{
-    height: 90vh;
-    position: absolute;
-    margin-top: 45vh;
+    width: 84vw;
     padding: 0 8vw;
 }
 
@@ -139,8 +142,6 @@ body{
 
 /* FASILITAS */
 #fasilitas{
-  position: absolute;
-  margin-top: 125vh;
   padding: 0 8vw;
 }
 
@@ -167,9 +168,8 @@ body{
 
 /* PERATURAN */
 #peraturan{
-  position: absolute;
-  margin-top: 155vh;
-  padding: 0 8vw;
+  padding: 0 8vw 8vh 8vw;
+  width: 84vw;
 }
 
 #peraturan h1{
@@ -210,8 +210,6 @@ body{
   background-color: #EFEDE0;
   width: 100vw;
   height: 70vh;
-  position: absolute;
-  margin-top: 210vh;
   padding: 3vh 3vw;
 }
 
@@ -219,7 +217,7 @@ body{
   align-items: center;
   display: flex;
   justify-content: center;
-  color: black;
+  color: #C96868;
 }
 
 .container {
@@ -235,7 +233,7 @@ body{
 
 .card {
     position: relative;
-    width: 18vw;
+    width: 25vw;
     height: 50vh;
     border-radius: 0 30px 0 30px;
     overflow: hidden;
@@ -272,8 +270,6 @@ body{
 /* TIKET */
 
   #tiket {
-    position: absolute;
-    margin-top: 290vh;
     width: 100vw;
     overflow-x: hidden;
   }
@@ -376,15 +372,12 @@ body{
 /* MAPS */
 
 .map-container {
-    position: absolute;
-    margin-top: 360vh;
     width: 100%;
-    height: 50%;
-    padding: 10vh 0;
+    height: 100%;
+    padding: 8vh 0;
 }
 
-.map-container iframe {
-    position: absolute;
+.map-container iframe { 
     width: 100%;
     height: 100%;
 }
@@ -393,9 +386,8 @@ body{
 
 footer p{
     width: 100vw;
-    position: absolute;
     display: flex;
     justify-content: center;
     height: 10vh;
-    margin-top: 445vh;
+    margin: 0;
 }
