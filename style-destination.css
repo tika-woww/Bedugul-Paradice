@@ -229,6 +229,12 @@ body{
   overscroll-behavior-x: contain;
   scroll-snap-type: mandatory;
   scrollbar-width: none;
+  justify-content: flex-start; /* Default untuk lebih dari dua elemen */
+}
+
+.container.card-few {
+  justify-content: center; /* Center items ketika kurang dari tiga elemen */
+  gap: 5vw; /* Gap lebih kecil untuk membuat elemen lebih berdekatan */
 }
 
 .card {
