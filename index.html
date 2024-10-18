@@ -258,7 +258,39 @@
     </section>
 
     <footer>
-        <p>© 2024 Bedugul Paradice. All Rights Reserved.</p>
+        <div class="footer-atas">
+            <div class="about-us">
+                <div class="logo">
+                    <img src="asset/Logo.png" alt="">
+                    <h3>Bedugul Paradice</h3>
+                </div>
+                <p>Bedugul Paradice adalah website yang menyediakan informasi lengkap tentang destinasi wisata terbaik di Bedugul, dari keindahan alam hingga tempat menarik yang wajib dikunjungi.</p>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    .
+                    <li><a href="#about">ABOUT</a></li>
+                    .
+                    <li><a href="#destinations">DESTINATIONS</a></li>
+                    .
+                    <li><a href="#gallery">GALLERY</a></li>
+                    .
+                    <li><a href="#maps">MAPS</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bawah">
+            <p>© 2024 Bedugul Paradice. All Rights Reserved.</p>
+            <div class="contant">
+                <img src="asset/whatsapp.svg" alt="">
+                <img src="asset/tiktok.svg" alt="">
+                <img src="asset/facebook.svg" alt="">
+                <img src="asset/instagram.svg" alt="" class="instagram">
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
@@ -266,6 +298,36 @@
         function redirectToDetail(destinasi) {
             window.location.href = `destination.html?destinasi=${destinasi}`;
         }
+
+        window.addEventListener('resize', function() {
+            const menu = document.querySelector('.menu ul');
+            if (window.innerWidth <= 1000) {
+        // Tampilan mobile
+            menu.innerHTML = `
+            <li><a href="#home">HOME</a></li>
+            .
+            <li><a href="#about">ABOUT</a></li>
+            .
+            <li><a href="#destinations">DESTINATIONS</a></li>
+            .
+            <li><a href="#gallery">GALLERY</a></li>
+            .
+            <li><a href="#maps">MAPS</a></li>
+            `;
+            } else {
+        // Tampilan desktop
+            menu.innerHTML = `
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#destinations">DESTINATIONS</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#maps">MAPS</a></li>
+            `;
+            }
+        });     
+
+// Jalankan pada saat halaman pertama kali dimuat
+window.dispatchEvent(new Event('resize'));
     </script>
 </body>
 </html>
