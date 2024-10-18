@@ -14,7 +14,7 @@ body{
 /* NAVBAR */
 
 .navbar{
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -83,75 +83,6 @@ body{
   }
 }
 
-@media (max-width: 768px) {
-  .navbar ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    background-color: #3A6D8C;
-    width: 100vw;
-    height: auto;
-  }
-
-  .navbar .menu-toggle input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 2;
-  }
-
-  .navbar ul.slide {
-    display: flex;
-    padding: 2vh 0;
-    font-size: 1.5vh;
-  }
-
-  .navbar ul li a{
-    padding: 5vh;
-  }
-
-  .navbar .menu-toggle {
-    display: flex;  
-  }
-
-  .navbar .menu-toggle span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: white;
-    border-radius: 3px;
-    transition: all 0.5s;
-  }
-  .navbar .menu-toggle span:nth-child(2) {
-    transform-origin: 0 0;
-  }
-  .navbar .menu-toggle span:nth-child(4) {
-    transform-origin: 0 100%;
-  }
-  .navbar .menu-toggle input:checked ~ span:nth-child(2) {
-    background-color: white;
-    transform: rotate(45deg) translate(-1px, -1px);
-  }
-  .navbar .menu-toggle input:checked ~ span:nth-child(3) {
-    opacity: 0;
-  }
-  .navbar .menu-toggle input:checked ~ span:nth-child(4) {
-    background-color: white;
-    transform: rotate(-45deg) translate(-1px, 0);
-  }
-
-  .logo img{
-  width: 4vh;
-  height: 4vh;
-}
-
-.logo h3{
-  font-size: 1.5vh;
-  font-weight: 700;
-}
-}
-
 /* TITLE */
 
 #title{
@@ -170,171 +101,6 @@ body{
 .wadah{
   position: absolute;
   margin-top: 45vh;
-}
-
-@media (max-width: 768px) {
-  #title{
-    width: 100vw;
-    height: 10vh;
-    padding: 10vh 0 0vh 0 ;
-    font-size: 2vh;
-  }
-  
-  .wadah{
-    position: absolute;
-    margin-top: 20vh;
-  }
-
-  #about .title h1{
-    font-size: 2vh;
-  }
-
-  #about .content{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content .gambar{
-    width: 60vw !important;
-    margin-top: 3vh;
-  }
-
-  .informasi-buka .hari-buka img{
-    width: 10vw !important;
-  }
-
-  .informasi-buka .jam-buka img{
-    width: 9vw !important;
-  }
-
-  .container-content .content img{
-    width: 7vw !important;
-  }
-
-  .container-content .content p{
-    font-size: 3vw !important;
-  }
-
-  #fasilitas .container-content{
-    gap: 8vw;
-  }
-
-  #peraturan .container {
-    display: grid;
-    grid-auto-flow: row;
-  }
-
-  #peraturan h1{
-    margin-bottom: 0vh !important;
-  }
-
-  #peraturan .container .content img{
-    width: 10vw !important;
-    margin-top: -5vh !important;
-    margin-left: -5vw !important;
-  }
-
-  #peraturan .container .content{
-    width: 80vw !important;
-    margin-top: 2.5vh;
-  }
-
-  #peraturan .container .content h4{
-    font-size: 3vw !important;
-    margin: 1vh 0 1vh 0 !important;
-  }
-
-  #peraturan .container .content p{
-    font-size: 1.7vw !important;
-    text-align: center !important;
-    margin: 0 !important;
-  }
-
-  #recomendation-activity{
-    height: auto !important;
-  }
-  
-  #recomendation-activity .container{
-    gap: 5vw;
-  }
-  
-  .card{
-    width: 50vw !important;
-    height: 30vh !important;
-  }
-
-  #tiket h1{
-    font-size: 2.5vh !important;
-  }
-
-  .card-row{
-    padding: 0 3vw !important;
-  }
-
-  .icon{
-    width: 10vw !important;
-  }
-
-  .day{
-    font-size: 3vw !important;
-    width: 40vw;
-  }
-
-  .custom-line{
-    margin: 1.5vh 0 !important;
-  }
-
-  .jenis-tiket-harga{
-    height: 3vh !important;
-    margin-bottom: 1vh;
-  }
-
-  .description{
-    font-size: 3vw !important;
-  }
-
-  .buttons{
-    margin-top: 3vh !important;
-  }
-
-  .buy-button{
-    padding: 2vh 3vw !important;
-    font-size: 3vw !important;
-  }
-
-  .footer-atas{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-atas .about-us{
-    width: 90vw !important;
-    font-size: 3vw;
-  }
-
-  .menu ul{
-    gap: 1vw !important;
-    font-size: 2.5vw !important;
-    width: 90vw !important;
-    padding: 0;
-  }
-
-  .footer-bawah{
-    height: 8vh !important;
-  }
-
-  .footer-bawah p{
-    font-size: 3vw !important;
-  }
-
-  .footer-bawah .contant img{
-    width: 6vw !important;
-  }
-
-  .footer-bawah .contant .instagram{
-    width: 5vw !important;
-    margin-left: 1vw;
-  }
 }
 
 /* ABOUT */
@@ -673,4 +439,238 @@ footer hr{
 
 .footer-bawah .content img .instagram{
   width: 2.5vw;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: #3A6D8C;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    text-align: center;
+  }
+
+  .navbar .menu-toggle input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .navbar ul.slide {
+    display: flex;
+    padding: 2vh 0;
+    font-size: 1.5vh;
+  }
+
+  .navbar ul li a{
+    padding: 5vh;
+  }
+
+  .navbar .menu-toggle {
+    display: flex;  
+  }
+
+  .navbar .menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+  }
+  .navbar .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+  .navbar .menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+  .navbar .menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+  .navbar .menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+  }
+  .navbar .menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+  }
+
+  .logo img{
+  width: 4vh;
+  height: 4vh;
+}
+
+.logo h3{
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+  #title{
+    width: 100vw;
+    height: 10vh;
+    padding: 10vh 0 0vh 0 ;
+    font-size: 2vh;
+  }
+  
+  .wadah{
+    position: absolute;
+    margin-top: 20vh;
+  }
+
+  #about .title h1{
+    font-size: 2vh;
+  }
+
+  #about .content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content .gambar{
+    width: 60vw !important;
+    margin-top: 3vh;
+  }
+
+  .informasi-buka .hari-buka img{
+    width: 10vw !important;
+  }
+
+  .informasi-buka .jam-buka img{
+    width: 9vw !important;
+  }
+
+  .container-content .content img{
+    width: 7vw !important;
+  }
+
+  .container-content .content p{
+    font-size: 3vw !important;
+  }
+
+  #fasilitas .container-content{
+    gap: 8vw;
+  }
+
+  #peraturan .container {
+    display: grid;
+    grid-auto-flow: row;
+  }
+
+  #peraturan h1{
+    margin-bottom: 0vh !important;
+  }
+
+  #peraturan .container .content img{
+    width: 10vw !important;
+    margin-top: -5vh !important;
+    margin-left: -5vw !important;
+  }
+
+  #peraturan .container .content{
+    width: 80vw !important;
+    margin-top: 2.5vh;
+  }
+
+  #peraturan .container .content h4{
+    font-size: 3vw !important;
+    margin: 1vh 0 1vh 0 !important;
+  }
+
+  #peraturan .container .content p{
+    font-size: 1.7vw !important;
+    text-align: center !important;
+    margin: 0 !important;
+  }
+
+  #recomendation-activity{
+    height: auto !important;
+  }
+  
+  #recomendation-activity .container{
+    gap: 5vw;
+  }
+  
+  .card{
+    width: 50vw !important;
+    height: 30vh !important;
+  }
+
+  #tiket h1{
+    font-size: 2.5vh !important;
+  }
+
+  .card-row{
+    padding: 0 3vw !important;
+  }
+
+  .icon{
+    width: 10vw !important;
+  }
+
+  .day{
+    font-size: 3vw !important;
+    width: 40vw;
+  }
+
+  .custom-line{
+    margin: 1.5vh 0 !important;
+  }
+
+  .jenis-tiket-harga{
+    height: 3vh !important;
+    margin-bottom: 1vh;
+  }
+
+  .description{
+    font-size: 3vw !important;
+  }
+
+  .buttons{
+    margin-top: 3vh !important;
+  }
+
+  .buy-button{
+    padding: 2vh 3vw !important;
+    font-size: 3vw !important;
+  }
+
+  .footer-atas{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-atas .about-us{
+    width: 90vw !important;
+    font-size: 3vw;
+  }
+
+  .menu ul{
+    gap: 1vw !important;
+    font-size: 2.5vw !important;
+    width: 90vw !important;
+    padding: 0;
+  }
+
+  .footer-bawah{
+    height: 8vh !important;
+  }
+
+  .footer-bawah p{
+    font-size: 3vw !important;
+  }
+
+  .footer-bawah .contant img{
+    width: 6vw !important;
+  }
+
+  .footer-bawah .contant .instagram{
+    width: 5vw !important;
+    margin-left: 1vw;
+  }
 }
