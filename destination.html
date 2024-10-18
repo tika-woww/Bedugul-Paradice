@@ -12,7 +12,7 @@
             <img src="asset/Logo.png" alt="">
             <h3>Bedugul Paradice</h3>
       </div>
-      <ul>
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#fasilitas">Fasilitas</a></li>
         <li><a href="#peraturan">Peraturan</a></li>
@@ -235,6 +235,14 @@
 
     </div>
     <script>
+
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector(".nav-links");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+
       function getQueryParam(param) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(param);
@@ -327,7 +335,7 @@
         </div>`,
         tiket: `<div class="card-tiket">
               <img src="asset/Logo tiket weekday.svg" alt="Icon" class="icon">
-              <p class="day">Weekdays (Senin - Jumat) Domestik</p>
+              <p class="day">Weekdays Domestik</p>
               <hr class="custom-line">
               <div class="jenis-tiket-harga">
                 <p class="description">Untuk umum</p>
@@ -337,7 +345,7 @@
 
           <div class="card-tiket">
               <img src="asset/Logo tiket weekend.svg" alt="Icon" class="icon">
-              <p class="day">Weekend (Sabtu - Minggu) Domestik</p>
+              <p class="day">Weekend Domestik</p>
               <hr class="custom-line">
               <div class="jenis-tiket-harga">
                 <p class="description">Untuk umum</p>
@@ -347,7 +355,7 @@
 
           <div class="card-tiket">
               <img src="asset/Logo tiket weekday.svg" alt="Icon" class="icon">
-              <p class="day">Weekdays (Senin - Jumat) Internasional</p>
+              <p class="day">Weekdays Internasional</p>
               <hr class="custom-line">
               <div class="jenis-tiket-harga">
                 <p class="description">Untuk umum</p>
@@ -357,7 +365,7 @@
 
           <div class="card-tiket">
               <img src="asset/Logo tiket weekend.svg" alt="Icon" class="icon">
-              <p class="day">Weekend (Sabtu - Minggu) Internasional</p>
+              <p class="day">Weekend Internasional</p>
               <hr class="custom-line">
               <div class="jenis-tiket-harga">
                 <p class="description">Untuk umum</p>
@@ -529,7 +537,7 @@
         </div>`,
         tiket: `<div class="card-tiket">
               <img src="asset/Logo tiket weekday.svg" alt="Icon" class="icon">
-              <p class="day">Weekdays (Senin - Jumat) Domestik</p>
+              <p class="day">Weekdays Domestik</p>
               <hr class="custom-line">
               <div class="jenis-tiket-harga">
                 <p class="description">Untuk Dewasa</p>
@@ -539,7 +547,7 @@
 
           <div class="card-tiket">
               <img src="asset/Logo tiket weekend.svg" alt="Icon" class="icon">
-              <p class="day">Weekend (Sabtu - Minggu) Domestik</p>
+              <p class="day">Weekend Domestik</p>
               <hr class="custom-line">
               <div class="jenis-tiket-harga">
                 <p class="description">Untuk Dewasa</p>
@@ -651,7 +659,7 @@
         </div>`,
         tiket: `<div class="card-tiket">
               <img src="asset/Logo tiket weekday.svg" alt="Icon" class="icon">
-              <p class="day">Weekdays (Senin - Jumat) Domestik</p>
+              <p class="day">Weekdays Domestik</p>
               <hr class="custom-line">
               <div class="jenis-tiket-harga">
                 <p class="description">Untuk Dewasa</p>
@@ -661,7 +669,7 @@
 
           <div class="card-tiket">
               <img src="asset/Logo tiket weekend.svg" alt="Icon" class="icon">
-              <p class="day">Weekend (Sabtu - Minggu) Domestik</p>
+              <p class="day">Weekend Domestik</p>
               <hr class="custom-line">
               <div class="jenis-tiket-harga">
                 <p class="description">Untuk Dewasa</p>
