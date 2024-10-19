@@ -481,6 +481,172 @@ body{
   border: 2px solid #555;
 }
 
+/* RESTORAN */
+
+/* Atur posisi restoran */
+#restoran {
+  width: 100vw;
+  height: 120vh;
+}
+
+#restoran h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+}
+
+.foto {
+  display: flex;
+  padding: 2vh 5vw;
+  gap: 2vw;
+}
+
+/* Atur gambar agar berada di dalam div */
+.kanan .atas img, .kiri .bawah img, .kanan .bawah img, .kiri .atas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kanan .atas img {
+  margin-bottom: 3vh;
+}
+
+.kiri .bawah img {
+  margin-top: 3vh;
+}
+
+.kanan .bawah, .kiri .atas {
+  display: flex;
+  gap: 3vw;
+}
+
+/* Styling overlay (efek saat hover) */
+.foto div .atas, 
+.foto div .bawah .satu,
+.foto div .bawah .dua,
+.foto div .bawah,
+.foto div .atas .satu,
+.foto div .atas .dua
+{
+  position: relative;
+  overflow: hidden; /* Penting agar teks tidak keluar dari area gambar */
+}
+
+.foto div img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Default: teks tidak terlihat */
+.foto div h4{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color: white;
+}
+
+.foto .kanan .bawah .satu h4,
+.foto .kanan .bawah .dua h4,
+.foto .kiri .atas .dua h4{
+  width: 20vw;
+}
+
+.foto .kiri .atas .satu h4{
+  width: 18vw;
+}
+
+.foto .kanan .atas h4{
+  width: 15vw;
+}
+
+.foto div h6{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color: white;
+}
+
+.foto div a{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color: white;
+}
+
+/* Tambahkan latar belakang gelap pada teks */
+.foto div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Warna hitam semi-transparan */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Saat gambar dihover, tampilkan teks dan background */
+.foto  .kanan .atas:hover h4,
+.foto  .kanan .atas:hover h6,
+.foto  .kanan .atas:hover a, 
+.foto  .kanan .bawah .satu:hover h4,
+.foto  .kanan .bawah .satu:hover h6,
+.foto  .kanan .bawah .satu:hover a,
+.foto  .kanan .bawah .dua:hover h4,
+.foto  .kanan .bawah .dua:hover h6,
+.foto  .kanan .bawah .dua:hover a, 
+
+.foto  .kiri .bawah:hover h4,
+.foto  .kiri .bawah:hover h6,
+.foto  .kiri .bawah:hover a, 
+.foto  .kiri .atas .satu:hover h4,
+.foto  .kiri .atas .satu:hover h6,
+.foto  .kiri .atas .satu:hover a,
+.foto  .kiri .atas .dua:hover h4,
+.foto  .kiri .atas .dua:hover h6,
+.foto  .kiri .atas .dua:hover a 
+{
+  opacity: 1; /* Tampilkan teks */
+}
+
+.foto div:hover::before {
+  opacity: 1; /* Tampilkan overlay gelap */
+}
+
+/* Sesuaikan ukuran font */
+.foto div h4 {
+  font-size: 1.5vw;
+}
+
+.foto div h6 {
+  font-size: 1.2vw;
+}
+
+.foto div a {
+  font-size: 1.2vw;
+  text-decoration: none;
+  background: #f39c12;
+  padding: 0.5vw 1vw;
+  border-radius: 5px;
+}
+
+
 /* MAPS */
 
 .map-container {
@@ -678,6 +844,31 @@ hr{
 
   .arrows{
     right: 50% !important;
+  }
+
+  #restoran {
+    height: auto !important;
+  }
+
+  .kanan .bawah, .kiri .atas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kanan .atas img {
+    margin-bottom: 1vh !important;
+  }
+
+  .kiri .bawah img {
+    margin-top: 1vh !important;
+  }
+
+  .map-container{
+    padding: 2vh 0 !important;
+  }
+
+  footer{
+    margin-top: 5vh !important;
   }
 
   .footer-atas{

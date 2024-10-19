@@ -63,3 +63,4 @@ Fancybox.bind("[data-fancybox='gallery']", {
   Toolbar: true, // Menampilkan toolbar
   Thumbs: true, // Menampilkan thumbnail di bawah
 });
+

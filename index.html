@@ -252,7 +252,55 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <section id="restoran">
+        <h1>REKOMENDASI RESTORAN DI BEDUGUL</h1>
+    <div class="foto">
+        <div class="kanan">
+            <div class="atas">
+                <img src="asset/restoran/19.png" alt="">
+                <h4>Bli Wayan Cafe & Kitchen</h4>
+                <h6>Western</h6>
+                <a href="https://maps.app.goo.gl/cV2KR7GrexijkRPt7">Lokasi</a>
+            </div>
+            <div class="bawah">
+                <div class="satu">
+                    <img src="asset/restoran/13.png" alt="">
+                    <h4>Tepi Buyan (Babi Genyol & Ayam Betutu)</h4>
+                    <h6>Tradisional</h6>
+                    <a href="https://maps.app.goo.gl/sEbJraq2i2b7bts3A">Lokasi</a>
+                </div>
+                <div class="dua">
+                    <img src="asset/restoran/16.png" alt="">
+                    <h4>Warung Nurismu Al Hidayah</h4>
+                    <h6>Tradisional</h6>
+                    <a href="https://maps.app.goo.gl/CYUrwSe7wiKinpkT6">Lokasi</a>
+                </div>
+            </div>
+        </div>
+        <div class="kiri">
+            <div class="atas">
+                <div class="satu">
+                    <img src="asset/restoran/18.png" alt="">
+                    <h4>Portofino pizzeria & cafe</h4>
+                    <h6>Western</h6>
+                    <a href="https://maps.app.goo.gl/yP6V1aqqVzoD8AKe9">Lokasi</a>
+                </div>
+                <div class="dua">
+                    <img src="asset/restoran/17.png" alt="">
+                    <h4>Ayam Bakar Taliwang</h4>
+                    <h6>Tradisional</h6>
+                    <a href="https://maps.app.goo.gl/KGQyBgjY65ajLDCp9">Lokasi</a>
+                </div>
+            </div>
+            <div class="bawah">
+                <img src="asset/restoran/14.png" alt="">
+                <h4>Restaurant Ulun Danu Beratan</h4>
+                <h6>Tradisional</h6>
+                <a href="https://maps.app.goo.gl/3HDsBv4YpbZNsc9v7">Lokasi</a>
+            </div>
+        </div>
+    </div>
+    </section>
 
     <section class="map-container" id="maps">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d252690.26171815765!2d114.8742326!3d-8.2743728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd189f36f06fc51%3A0x5c0b45f315c22902!2sBedugul%20Hill!5e0!3m2!1sen!2sid!4v1728218735324!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -295,6 +343,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script>
         function redirectToDetail(destinasi) {
             window.location.href = `destination.html?destinasi=${destinasi}`;
@@ -326,9 +375,9 @@
             `;
             }
         });     
+        window.dispatchEvent(new Event('resize'));
 
-// Jalankan pada saat halaman pertama kali dimuat
-window.dispatchEvent(new Event('resize'));
+
     </script>
 </body>
 </html>
